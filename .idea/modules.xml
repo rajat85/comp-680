@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TimeTrackerBotFunction.iml" filepath="$PROJECT_DIR$/.idea/modules/TimeTrackerBotFunction.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/httparty-0.18.1.iml" filepath="$PROJECT_DIR$/.idea/modules/httparty-0.18.1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rack-protection-2.1.0.iml" filepath="$PROJECT_DIR$/.idea/modules/rack-protection-2.1.0.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sinatra-2.1.0.iml" filepath="$PROJECT_DIR$/.idea/modules/sinatra-2.1.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/time_tracker_bot.iml" filepath="$PROJECT_DIR$/.idea/time_tracker_bot.iml" />
     </modules>
   </component>

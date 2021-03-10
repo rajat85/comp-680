@@ -9,22 +9,21 @@ class SlackBot
 
   def self.post_reminder(message, channel)
     webhook_url = ENV['SLACK_WEBHOOK_URL']
-    p "webhook url: #{webhook_url}"
     p "payload:\n #{payload(channel)}"
     HTTParty.post(ENV['SLACK_WEBHOOK_URL'], body: payload('rnd'), headers: HEADERS)
   end
 
   def self.payload(channel)
     {
-        "text":"Reminder to log your time.",
+        "text": ":warning: Here is the log from CloudWatch that needs your attention. \n",
         "channel": channel,
         "attachments": [
             {
-                "fallback":"Reminder to log your time at #{ENV['TIME_TRACKING_URL']}",
+                "fallback":"Please see the details at #{ENV['TIME_TRACKING_URL']}",
                 "actions":[
                     {
-                        "type":"button",
-                        "text":"Log time :clock5:",
+                        "type": "button",
+                        "text": "Log details :clock5:",
                         "url": ENV['TIME_TRACKING_URL']
                     }
                 ]

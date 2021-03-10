@@ -9,3 +9,6 @@ post '/' do
   status slack_request.response.code
 end
 
+post '/cloudwatch' do
+
+end
